@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-div">
+            <h1>Upgradation Form</h1>
+            <form action="/edit/<%=user.username%>" method="POST">
+                <div class="inputdiv name-div">
+                    <input type="username" name="username" id="username" value="<%=user.username%>">
+                </div>
+                <div class="inputdiv email-div">
+                    <input type="email" name="email" id="email" value="<%=user.email%>">
+                </div>
+                <div class="inputdiv password-div">
+                    <input type="password" name="password" id="password" placeholder="password">
+                </div>
+                <div class="inputdiv submit-div">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
